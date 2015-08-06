@@ -4,7 +4,9 @@ from .models import Post
 import sys
 from imp import reload
 reload(sys)
-sys.setdefaultencoding("utf-8")
+if sys.version[0] == '2':
+    reload(sys)
+    sys.setdefaultencoding("utf-8")
 
 # Create your views here.
 
