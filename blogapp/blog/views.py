@@ -1,12 +1,7 @@
 from django.shortcuts import render
 from django.utils import timezone
 from .models import Post
-import sys
-from imp import reload
-reload(sys)
-if sys.version[0] == '2':
-    reload(sys)
-    sys.setdefaultencoding("utf-8")
+
 
 # Create your views here.
 
